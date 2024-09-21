@@ -1,0 +1,357 @@
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    background-color: #FFE8D2;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+header{
+    top: 0;
+    z-index: 2;
+    position: fixed;
+    font-family: "Lily Script One", system-ui;
+    letter-spacing: 2px;
+
+    
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 10%;
+    width: 100%;
+    align-items: center;
+    padding-top: 7px;
+
+    overflow: hidden;
+  
+}
+
+#header_logo{
+    object-fit: contain;
+
+    height: 60%;
+    margin-left: 2%;
+}
+
+#navigation{
+    display: flex;
+    justify-content: right;
+    font-size: 26px;
+    padding-right: 4%;
+    /* margin-right: 4%; */
+}
+#navigation a{
+    margin-left: 28%;
+    color: white;
+}
+
+
+
+#content{
+    height: 50em;
+    width: 100%;
+
+    margin-top: 12em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#formwrapper{
+    height: 50em;
+    width: 60em;
+    background-color: #52484a;
+}
+
+#formheader{
+    width: 100%;
+    height: 5em;
+    background-color: #352e30;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+
+    
+}
+
+#formheader p {
+    font-family: "Lily Script One", system-ui;
+    letter-spacing: 2px;
+    font-size: 30px;
+}
+
+#form-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5em;
+    padding: 4.2em;
+}
+#form-container label {
+    font-family: "Magra", sans-serif;
+    letter-spacing: 2px;
+    font-style: normal;
+    line-height: 1.4;
+    display: block;
+    margin-bottom: 5px;
+    color: white;
+    font-size: 22px;
+}
+#form-container input,select {
+    height: 2em;
+    width: 100%;
+    padding-left: 8px;
+    box-sizing: border-box;
+    font-size: 22px;
+    font-family: "Magra", sans-serif;
+    letter-spacing: 1px;
+    font-style: normal;
+    line-height: 1.4;
+}
+
+#messagewrapper{
+    grid-column: span 2;
+
+}
+
+#message{
+    resize: none;
+
+    padding: 1em;
+    font-size: 22px;
+    height: 10em;
+    width: 100%;
+    
+}
+
+
+#otheroptioncontainer{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#cancelother{
+    position: absolute;
+    background-color: rgb(203, 203, 203);
+    height: 2em;
+    width: 2em;
+
+    right: 1em;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-width: 0;
+}
+
+#cancelother img{
+    width: 170%;
+    height: 100%;
+}
+
+
+#buttonwrapper{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    position: relative;
+    grid-column: span 2;
+    height: 2em;
+    width: 100%;
+}
+#errormsg{
+    position: absolute;
+    right: 6em;
+    text-align: right;
+    font-size: 24px;
+    color: rgb(250, 84, 55);
+    font-family: "Magra", sans-serif;
+    letter-spacing: 1px;
+    font-style: normal;
+    width: 20em;
+}
+#submitbutton{
+
+    position: absolute;
+    right: 0;
+    width: 6em;
+    height: 2em;
+    background-color: black;
+    color: white;
+    border-width: 0;
+    /* border-radius: 10px; */
+
+    font-size: 22px;
+    font-family: "Magra", sans-serif;
+    letter-spacing: 1px;
+    font-style: normal;
+
+
+}
+
+#submitbutton:hover{
+    background-color: rgb(43, 20, 20);
+
+}
+
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    color: white;
+    background-color: black;
+    margin-top: 10em;
+    height: 60%;
+    
+}
+
+footer img{
+    margin-top: 4em;
+    margin-bottom: 3em;
+    /* object-fit: contain; */
+    width: 15em;
+
+
+}
+
+footer #information{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 80%;
+    overflow: scroll;
+    scrollbar-width: none;
+
+}
+
+footer h1{
+    font-family: "Lilita One";
+    font-weight: normal;
+    letter-spacing: 2px;
+    color: white;
+}
+
+footer h1:hover{
+    font-family: "Lilita One";
+    font-weight: normal;
+    letter-spacing: 2px;
+    color: white;
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+}
+
+footer p{
+    font-family: "Magra", sans-serif;
+    letter-spacing: 2px;
+    font-style: normal;
+    line-height: 1.4;
+    font-size: 26px;
+}
+
+footer #information a{
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+footer #information img{
+    width: fit-content;
+    margin: 0;
+    margin-left: 1em;
+    height: 2em;
+}
+
+footer #aboutus{
+    height: 80%;
+    width: 40%;
+    text-align: center;
+    color: white;
+
+    border-right: white;
+    border-width: 0 2px 0 0 ;
+    border-style: solid;
+
+    margin-left: 10%;
+
+}
+
+
+footer #contact{
+    height: 80%;
+
+    width: 40%;
+    text-align: center;
+    color: white;
+
+    border-right: white;
+    border-width: 0 0 0 2px ;
+    border-style: solid;
+
+    margin-right: 10%;
+
+
+
+}
+
+@media screen and (max-width: 768px) {
+    body{
+        /* background-color: red; */
+
+    }
+
+    #navigation{
+        font-size: 20px;
+    }
+
+    #navigation a{
+        margin-left: 20%;
+    }
+    
+
+    footer{
+        height: 40%;
+    }
+    
+    footer img{
+        width: 12em;   
+    }
+
+    
+    footer h1{
+        font-size: 24px;
+    }
+    
+    
+    footer p{
+        font-size: 17px;
+        margin: 0 1em
+
+    }
+
+    footer #aboutus{
+        margin-left: 0;
+    }
+    
+
+    footer #contact{
+
+        margin-right: 0;
+    }
+
+    
+    
+}

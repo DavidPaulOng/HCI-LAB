@@ -1,0 +1,598 @@
+
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    background-color: #FFE8D2;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+header{
+    z-index: 2;
+    position: fixed;
+    font-family: "Lily Script One", system-ui;
+    letter-spacing: 2px;
+
+    
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 10%;
+    width: 100%;
+    align-items: center;
+    padding-top: 7px;
+top: 0;
+    overflow: hidden;
+  
+}
+
+#header_logo{
+    object-fit: contain;
+
+    height: 60%;
+    margin-left: 2%;
+}
+
+#navigation{
+    display: flex;
+    justify-content: right;
+    font-size: 26px;
+    padding-right: 4%;
+    margin-right: 4%;
+}
+#navigation a{
+    margin-left: 28%;
+    color: white;
+}
+
+
+
+
+
+#content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5em;
+}
+
+
+#history{
+    position: relative;
+    background-color: #b18f6e76;
+    width: 100%;
+    height: 40em;
+
+    display: flex;
+    align-items: center;
+
+    overflow-x: auto;
+    overflow-y: visible;
+
+    flex-wrap: nowrap;
+
+    scrollbar-width: none;
+
+    border-width: 5px 0;
+    border-style: dotted;
+
+}
+
+
+.section{
+    font-family: "Lilita One";
+    font-weight: normal;
+    letter-spacing: 1.2px;
+
+    color: black;
+
+    font-size: 45px;
+    margin-top: 3em;
+}
+
+
+#historyline{
+    position: absolute;
+    width: 240em;
+    height: 8px;
+    left: 25em;
+    background-color: black;
+}
+
+#history p{
+    font-family: "Magra", sans-serif;
+    letter-spacing: 2px;
+    font-style: normal;
+    line-height: 1.2;
+    font-size: 26px;
+    color: white;
+}
+
+#history h1{
+    font-family: "Lilita One";
+    font-weight: normal;
+    letter-spacing: 1px;
+    font-size: 28px;
+    color: #F3ECA9;
+}
+
+#head{
+    flex: 0 0 auto;
+    white-space: wrap;
+    text-align: center;
+
+    position: absolute;
+    width: 16em;
+    height: 16em;
+
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em 3em;
+
+    left: 20em;
+
+    transition: 0.5s;
+
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+    border-width: 10px;
+    border-style: solid;
+
+}
+
+#head p{
+    color: white;
+    font-size: 35px;
+}
+
+
+#inception{
+    position: absolute;
+    flex: 0 0 auto;
+
+    width: 45em;
+    height: 35em;
+    background-color: #945266;
+    border-radius: 60px;
+    left: 60em;
+    transition: all 0.5s ease;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2.8em;
+    text-align: center;
+
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+    border-width: 3px;
+    border-style: solid;
+}
+
+#inception img{
+    width: 15em;
+}
+
+
+
+span{
+    color: #F7FB3C;
+}
+
+#expanding{
+    position: absolute;
+    flex: 0 0 auto;
+
+    width: 45em;
+    height: 35em;
+    background-color: #563F46;
+    border-radius: 60px;
+    left: 130em;
+    transition: all 0.5s ease;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2.8em;
+    text-align: center;
+
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+    border-width: 3px;
+    border-style: solid;
+}
+
+#expanding img{
+    width: 25em;
+}
+
+
+
+#global{
+    position: absolute;
+    flex: 0 0 auto;
+
+    width: 45em;
+    height: 35em;
+    background-color: #af6363;
+    border-radius: 60px;
+    left: 200em;
+    transition: all 0.5s ease;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2.8em;
+    text-align: center;
+
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+    border-width: 3px;
+    border-style: solid;
+}
+
+#global img{
+    width: 25em;
+}
+
+#mission{
+    width: 65em;
+    height: 20em;
+    background-color: #865A5A;
+
+    border-radius: 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 10em;
+}
+
+#mission P{
+    font-family: "Magra", sans-serif;
+    letter-spacing: 2px;
+    font-style: normal;
+    line-height: 1.2;
+
+    color: white;
+    font-size: 26px;
+    text-align: center;
+
+}
+
+#motto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45em;
+    height: 5em;
+    background-color: #F9BE8D;
+    border-radius: 80px;
+
+
+}
+
+#motto p{
+    font-family: "Lily Script One", system-ui;
+    letter-spacing: 2px;
+    font-size: 28px;
+    color: black;
+
+
+}
+
+#profilescontainer{
+    background-color: rgb(63, 32, 32);
+    width: fit-content;
+    height: fit-content;
+
+    border-radius: 40px;
+
+}
+
+.profiles{
+    display: flex;
+    justify-content: center;
+    width: 100em;
+    height: 50em;
+
+}
+.profiles img{
+    padding: 6em;
+    width: 50%;
+    border-radius: 50%;
+}
+.description{
+    font-family: "Magra", sans-serif;
+    letter-spacing: 2px;
+    font-style: normal;
+    line-height: 1.2;
+    color: white;
+    padding: 5em;
+    padding-top: 3em;
+    padding-left: 0;
+    font-size: 24px;
+    width: 50%;
+}
+.profiles h3{
+    color: #F3ECA9;
+}
+#john{
+    padding: 5em;
+    padding-top: 3em;
+    padding-right: 0;
+}
+
+
+/* footer */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    color: white;
+    background-color: black;
+    margin-top: 10em;
+    height: 60%;
+    
+}
+
+footer img{
+    margin-top: 4em;
+    margin-bottom: 3em;
+    /* object-fit: contain; */
+    width: 15em;
+
+
+}
+
+footer #information{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 80%;
+    overflow: scroll;
+    scrollbar-width: none;
+
+}
+
+footer h1{
+    font-family: "Lilita One";
+    font-weight: normal;
+    letter-spacing: 2px;
+    color: white;
+}
+
+footer h1:hover{
+    font-family: "Lilita One";
+    font-weight: normal;
+    letter-spacing: 2px;
+    color: white;
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+}
+
+footer p{
+    font-family: "Magra", sans-serif;
+    letter-spacing: 2px;
+    font-style: normal;
+    line-height: 1.4;
+    font-size: 26px;
+}
+
+footer #information a{
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+footer #information img{
+    width: fit-content;
+    margin: 0;
+    margin-left: 1em;
+    height: 2em;
+}
+
+footer #aboutus{
+    height: 80%;
+    width: 40%;
+    text-align: center;
+    color: white;
+
+    border-right: white;
+    border-width: 0 2px 0 0 ;
+    border-style: solid;
+
+    margin-left: 10%;
+
+}
+
+
+footer #contact{
+    height: 80%;
+
+    width: 40%;
+    text-align: center;
+    color: white;
+
+    border-right: white;
+    border-width: 0 0 0 2px ;
+    border-style: solid;
+
+    margin-right: 10%;
+
+
+
+}
+
+
+
+@media screen and (max-width: 768px) {
+    body{
+        /* background-color: red; */
+
+    }
+
+    #navigation{
+        font-size: 20px;
+    }
+
+    #navigation a{
+        margin-left: 20%;
+    }
+
+    #content{
+        margin-top: 0em;
+    }
+    
+
+    #history{
+        height: 25em;
+    }
+    
+    
+    #history p{
+        font-size: 17px;
+
+    }
+    
+    #history h1{
+        font-size: 22px;
+    }
+
+    #head{
+        width: 12em;
+        height: 12em;
+    }
+    
+    #head p{
+        color: white;
+        font-size: 25px;
+    }
+    
+    
+    #inception{
+        width: 35em;
+        height: 22em;
+    }
+    
+    #inception img{
+        width: 7em;
+    }
+
+    #expanding{
+        width: 35em;
+        height: 22em;
+    }
+    
+    #expanding img{
+        width: 10em;
+    }
+    #global{
+        width: 35em;
+        height: 22em;
+    }
+    
+    #global img{
+        width: 10em;
+    }
+    
+    #mission{
+        width: 40em;
+        height: 15em;
+        padding: 1em;
+    }
+    
+    #mission P{
+        font-size: 17px;
+    }
+    
+    #motto{
+        width: 35em;
+        height: 4em;
+    }
+    
+    #motto p{
+        font-family: "Lily Script One", system-ui;
+        letter-spacing: 2px;
+        font-size: 22px;
+        color: black;
+    
+    
+    }
+
+
+
+    
+    .profiles{
+        width: 40em;
+        height: 20em;
+        margin-bottom: 25em;
+    
+    }
+    .profiles img{
+        padding: 2em;
+        width: 50%;
+        border-radius: 50%;
+        /* margin-top: 3em; */
+    }
+    .description{
+        padding: 0em;
+        font-size: 17px;
+        padding-right: 2em;
+        padding-top: 1em;
+    }
+
+    #john{
+        padding: 0em;
+        padding-left: 2em;
+        padding-top: 1em;
+    }
+    
+
+    footer{
+        height: 40%;
+    }
+    
+    footer img{
+        width: 12em;   
+    }
+
+    
+    footer h1{
+        font-size: 24px;
+    }
+    
+    
+    footer p{
+        font-size: 17px;
+        margin: 0 1em
+
+    }
+
+    footer #aboutus{
+        margin-left: 0;
+    }
+    
+
+    footer #contact{
+
+        margin-right: 0;
+    }
+
+    
+    
+}
